@@ -11,105 +11,276 @@ body {
 }
 
 /* NAV BAR  */
-nav {
+nav{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
-.navbarBrand {
-    height: 40px;
-    width: auto;
-    margin-top: 30px;
+.navbarBrand{
+    max-width:20%;
 }
-nav ul {
+nav ul{
     display: flex;
+    list-style: none;
     margin-top: 0;
 }
-nav ul li {
-    padding: 30px 30px 0 30px;
-    list-style: none;
-}
-nav ul li:hover {
-    border-top: #0065FC 2px solid;
-}
-
-nav a {
-    color: black;
+nav li a{
+    display: block;
     text-decoration: none;
+    color: black;
+    padding: 30px 30px 0 30px;
+}
+nav li a:hover{
+    border-top: #0065FC solid ;
+    color: #0065FC;
 }
 .signUp{
     color: #0065FC;
     font-weight: bold;
 }
 
-a:hover {
-    color: #0065FC;
+/* Search section */
+#search{
+    margin-top: 3%;
+}
+#search p{
+    font-size: 0.83rem;
+}
+#search h3{
+    margin-bottom: 0;
 }
 
-/* Search section */
+/* search bar */
 .research{
     display: flex;
 }
-.fa-map-marker-alt{
-    padding: 13px;
+.research .fas{
     background-color: #F2F2F2;
-    border-radius: 25% 0 0 25%;
-    font-size: 12px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.searchInput {
-    border-style: solid none solid none;
-    border-color: #F2F2F2;
-    padding-left: 10px;
-}
-input::placeholder{
+.searchInput::placeholder{
     color: black;
     font-weight: bold;
+    padding-left: 0.875rem;
 }
-.searchButton {
-    color: white;
-    border: none;
+.searchInput{
+    border: solid #F2F2F2;
+    border-width: 1px 0;
+    min-width: 12rem;
+}
+.searchButton{
     background-color: #0065FC;
-    border-radius: 0 15px 15px 0;
-    padding: 10px 15px;
+    color: white;
+    border-style: none;
+    border-radius: 0 0.9375rem 0.9375rem 0;
+    padding: 0 1rem;
+}
+.searchButton:hover{
+    background-color: #F2F2F2;
+    color: #0065FC;
+    border: #0065FC solid 1px;
 }
 
-
-.filter {
+/* filter bar */
+.filters{
     display: flex;
     list-style: none;
+    padding-left: 0.3125rem;
+    margin-top: 2rem;
 }
-.filter li{
-    margin-right: 15px;
+.filters li{
+    display: flex;
+    align-items: center;
 }
-.filter .fas {
-    background-color: #DEEBFF;
-    color: #0065FC;
-    padding: 10px;
-    border-radius: 50%;
-}
-.title {
+.filtersTitle{
     font-weight: bold;
 }
-.info {
-    font-size: 10px;
+.filters .fas{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.875rem;
+    position: relative;
+    left: 1rem;
+}
+.filters input{
+    font-weight: bold;
+    background-color: white;
+    border: solid 1px #D9D9D9;
+    border-radius: 0 30px 30px 0;
+    border-left: 0;
+    height: 2.5rem;
+    padding: 0 1.2rem 0 1.5rem;
+}
+
+/* infos */
+.info{
+    display: flex;
+    align-items: center;
+    font-size: 0.750rem !important;
+}
+.info i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.8rem;
 }
 .fa-info{
-    border: #F2F2F2 1px solid;
-    border-radius: 50%;
     color: #0065FC;
-    padding: 5px 10px 5px 10px;
-    margin-right: 10px;
+    border: solid 1px #D9D9D9;
+    width: 1.375rem;
+    height: 1.375rem;
+    border-radius: 50%;
 }
 
-
-/* footer {
-    display: flex;
+/* Hosting section */
+.hosting, .mostPopular{
     background-color: #F2F2F2;
+    border-radius: 15px;
 }
-footer ul{
-    margin-right: 15%;
-}
-footer ul li {
-    margin-bottom: 10px;
+#hosting{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 1.5rem;
 }
 
- */
+/* Hosting list */
+.hosting{
+    width: 67%;
+}
+.hosting h4, .displayMore{
+    padding-left: 2rem;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+.card{
+    text-decoration: none;
+    color: black;
+    width: auto;
+    background-color: white;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0px 4px 5px #bebebe45;
+}
+.cardImage img{
+    width: 208px;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+}
+.cardText{
+    display: flex;
+    height: 65px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+}
+.cardTitle{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.cardContent{
+    font-size: 0.9rem;
+    margin: 0;
+}
+.note{
+    font-size: 0.7rem;
+}
+.blueStars{
+    color: #0065FC;
+}
+.greyStars{
+    color: #F2F2F2;
+}
+.displayMore{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 1.5rem 0 2.3rem 0;
+}
+.displayMore:hover{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+
+/* Popular hosting */
+.mostPopular{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.titlePopular{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1.8rem;
+}
+.popularCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.popularCard{
+    display: flex;
+    width: 85%;
+    height: 8rem;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0px 4px 5px #bebebe45;
+}
+.cardImagePop{
+    width: 7rem;
+    height: 7.4rem;
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;    
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    object-fit: cover;
+}
+.cardImagePop img{
+    border-radius: 15px 0 0 15px; 
+    object-fit: cover;   
+    /* padding: 5px; */
+}
+.cardTextPop{
+    margin: 10px;
+    width: 40%;
+}
+.cardTitlePop{
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.cardContentPop{
+    font-size: 0.75rem;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cardContentPop p{
+    margin-top: 0.4rem;
+}
+.price{
+    font-weight: bold;
+}

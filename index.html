@@ -14,7 +14,7 @@
             <a href="#"><img class="navbarBrand" src="assets/images/logo.png" alt="logo de l'entreprise Reservia"></a>
             <ul>
                 <li><a href="#hosting">Hébergements</a></li>
-                <li><a href="#Activités">Activités</a></li>
+                <li><a href="#activities">Activités</a></li>
                 <li><a class="signUp" href="#">S'inscrire</a></li>
             </ul>
         </nav>
@@ -23,13 +23,13 @@
     <section id="search">
         <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
         <p>En plein centre ville ou en pleine nature</p>
-        <div class="research">
+        <form class="research" action="">
             <i class="fas fa-map-marker-alt"></i>
             <input class="searchInput" type="text" placeholder="Marseille, France">
-            <input class="searchButton" type="button" value="Rechercher">
-        </div>
-        <ul class="filter">
-            <li class="title">Filtres</li>
+            <input class="searchButton" type="submit" value="Rechercher">
+        </form>
+        <ul class="filters">
+            <li class="filtersTitle">Filtres</li>
             <li><i class="fas fa-money-bill-wave"></i><input type="button" value="Économique"></li>
             <li><i class="fas fa-child"></i><input type="button" value="Familial"></li>
             <li><i class="fas fa-heart"></i><input type="button" value="Romantique"></li>
@@ -38,11 +38,208 @@
         <p class="info"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
 
-    <!--<section id="hosting"></section>
+    <section id="hosting">
+        <div class="hosting">
+            <h4>Hébergements à Marseille</h4>
+            <div class="cards">
+                <a class="card" href="#">
+                    <div class="cardImage">
+                        <img src="assets/images/auberge_la_cannebiere.jpg" alt="">
+                    </div>
+                    <div class="cardText">
+                        <div class="cardTitle">
+                            Auberge de la Cannebière
+                        </div>
+                        <div class="cardContent">
+                            Nuit à partir de <b>25€</b> 
+                        </div>
+                        <div class="note">
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star greyStars"></i>
+                        </div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="cardImage">
+                        <img src="assets/images/hotel_du_port.jpg" alt="">
+                    </div>
+                    <div class="cardText">
+                        <div class="cardTitle">
+                            Auberge de la Cannebière
+                        </div>
+                        <div class="cardContent">
+                            Nuit à partir de <b>52€</b> 
+                        </div>
+                        <div class="note">
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                        </div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="cardImage">
+                        <img src="assets/images/hotel_les_mouettes.jpg" alt="">
+                    </div>
+                    <div class="cardText">
+                        <div class="cardTitle">
+                            Auberge de la Cannebière
+                        </div>
+                        <div class="cardContent">
+                            Nuit à partir de <b>76€</b> 
+                        </div>
+                        <div class="note">
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star greyStars"></i>
+                        </div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="cardImage">
+                        <img src="assets/images/hotel_de_la_mer.jpg" alt="">
+                    </div>
+                    <div class="cardText">
+                        <div class="cardTitle">
+                            Auberge de la Cannebière
+                        </div>
+                        <div class="cardContent">
+                            Nuit à partir de <b>46€</b> 
+                        </div>
+                        <div class="note">
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star greyStars"></i>
+                            <i class="fas fa-star greyStars"></i>
+                        </div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="cardImage">
+                        <img src="assets/images/auberge_le_panier.jpg" alt="">
+                    </div>
+                    <div class="cardText">
+                        <div class="cardTitle">
+                            Auberge de la Cannebière
+                        </div>
+                        <div class="cardContent">
+                            Nuit à partir de <b>23€</b> 
+                        </div>
+                        <div class="note">
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star greyStars"></i>
+                        </div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="cardImage">
+                        <img src="assets/images/auberge_la_cannebiere.jpg" alt="">
+                    </div>
+                    <div class="cardText">
+                        <div class="cardTitle">
+                            Auberge de la Cannebière
+                        </div>
+                        <div class="cardContent">
+                            Nuit à partir de <b>96€</b> 
+                        </div>
+                        <div class="note">
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                            <i class="fas fa-star blueStars"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <a class="displayMore" href="#">Afficher plus</a>
+        </div>
 
-    <section id="activities"></section>
+        <!-- most popular section -->
+        <div class="mostPopular">
+            <div class="titlePopular">
+                <h4>Les plus populaires</h4>
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="popularCards">
+                <div class="popularCard">
+                    <div class="cardImagePop">
+                        <img src="assets/images/hotel_le_soleil_du_matin.jpg" alt="">
+                    </div>
+                    <div class="cardTextPop">
+                        <div class="cardTitlePop">
+                            Hôtel Le soleil du matin
+                        </div>
+                        <div class="cardContentPop">
+                            <p>Nuit à partir de <span class=price>128€</span> </p>
+                            <div class="notePop">
+                                <i class="fas fa-star blueStars"></i>
+                                <i class="fas fa-star blueStars"></i>
+                                <i class="fas fa-star blueStars"></i>
+                                <i class="fas fa-star blueStars"></i>
+                                <i class="fas fa-star blueStars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularCard">
+                    <div class="cardImagePop">
+                        <img src="assets/images/au_coeur_de_l_eau_chambres_d_hotes.jpg" alt="">
+                    </div>
+                    <div class="cardTextPop">
+                        <div class="cardTitlePop">
+                            Au coeur de l'eau Chambres d'hôtes
+                        </div>
+                        <div class="cardContentPop">
+                            <p>Nuit à partir de <span class=price>71€</span> </p>
+                            <div class="notePop">
+                                <i class="fas fa-star blueStars"></i>
+                                <i class="fas fa-star blueStars"></i>
+                                <i class="fas fa-star blueStars"></i>
+                                <i class="fas fa-star blueStars"></i>
+                                <i class="fas fa-star greyStars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularCard">
+                    <div class="cardImagePop">
+                        <img src="assets/images/hotel_tout_bleu_et_blanc.jpg" alt="">
+                    </div>
+                    <div class="cardTextPop">
+                        <div class="cardTitlePop">
+                            Hôtel Tout bleu et Blanc
+                        </div>
+                        <div class="cardContentPop">
+                            <p>Nuit à partir de <span class=price>68€</span> </p>
+                            <div class="notePop">
+                                <i class="fas fa-star blueStars"></i>
+                                <i class="fas fa-star blueStars"></i>
+                                <i class="fas fa-star blueStars"></i>
+                                <i class="fas fa-star blueStars"></i>
+                                <i class="fas fa-star greyStars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
 
-    <footer>
+    <!-- <section id="activities"></section> -->
+
+    <!-- <footer>
         <ul>
             <li class="title">A propos</li>
             <li><a href="#">Fonctionnement du site</a></li>
