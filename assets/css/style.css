@@ -5,19 +5,23 @@
     font-style: normal;
 }
 body {
-    max-width: 75%;
-    margin: auto;
     font-family: 'raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 /* NAV BAR  */
+header, section{
+    max-width: 93%;
+    margin: auto;
+
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 .navbarBrand{
-    max-width:20%;
+    max-width:25%;
 }
 nav ul{
     display: flex;
@@ -28,11 +32,12 @@ nav li a{
     display: block;
     text-decoration: none;
     color: black;
-    padding: 30px 30px 0 30px;
+    padding: 3.125rem 1.875rem 0 1.875rem;
 }
 nav li a:hover{
     border-top: #0065FC solid ;
     color: #0065FC;
+    padding-top: 2.9375rem;
 }
 .signUp{
     color: #0065FC;
@@ -44,21 +49,24 @@ nav li a:hover{
     margin-top: 3%;
 }
 #search p{
-    font-size: 0.83rem;
+    font-size: 0.9375rem;
+    margin-top: 0.75rem;
 }
 #search h3{
     margin-bottom: 0;
+    font-size: 1.3125rem;
 }
 
 /* search bar */
 .research{
     display: flex;
+    margin-top: 0.5rem;
 }
 .research .fas{
     background-color: #F2F2F2;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 15px 0 0 15px;
+    width: 3.1875rem;
+    height: 3.1875rem;
+    border-radius: 0.9375rem 0 0 0.9375rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,12 +74,16 @@ nav li a:hover{
 .searchInput::placeholder{
     color: black;
     font-weight: bold;
-    padding-left: 0.875rem;
+    font-size: 1.125rem;
 }
 .searchInput{
-    border: solid #F2F2F2;
-    border-width: 1px 0;
-    min-width: 12rem;
+    border: solid 0.0625rem #F2F2F2;
+    width: 14.625rem;
+    padding-left: 1.0625rem;
+}
+.searchInput:focus{
+    outline-style: none;
+    border-color: #0065FC;
 }
 .searchButton{
     background-color: #0065FC;
@@ -79,11 +91,13 @@ nav li a:hover{
     border-style: none;
     border-radius: 0 0.9375rem 0.9375rem 0;
     padding: 0 1rem;
+    font-size: 1.125rem;
+    transition: background-color 0.3s;
 }
 .searchButton:hover{
-    background-color: #F2F2F2;
+    background-color: white;
     color: #0065FC;
-    border: #0065FC solid 1px;
+    border: #0065FC solid 0.0625rem;
 }
 
 /* filter bar */
@@ -91,7 +105,7 @@ nav li a:hover{
     display: flex;
     list-style: none;
     padding-left: 0.3125rem;
-    margin-top: 2rem;
+    margin-top: 1.9375rem;
 }
 .filters li{
     display: flex;
@@ -103,30 +117,34 @@ nav li a:hover{
 .filters .fas{
     color: #0065FC;
     background-color: #DEEBFF;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.125rem;
+    height: 3.125rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1.875rem;
     position: relative;
-    left: 1rem;
+    left: 1.3rem;
 }
 .filters input{
     font-weight: bold;
     background-color: white;
-    border: solid 1px #D9D9D9;
-    border-radius: 0 30px 30px 0;
+    border: solid 0.0625rem #D9D9D9;
+    border-radius: 0 1.875rem 1.875rem 0;
     border-left: 0;
-    height: 2.5rem;
-    padding: 0 1.2rem 0 1.5rem;
+    height: 3.125rem;
+    padding: 0 1.4375rem 0 2rem;
+    transition: background-color 0.3s;
+}
+.filters input:hover{
+    background-color: #F2F2F2;
 }
 
 /* infos */
 .info{
     display: flex;
     align-items: center;
-    font-size: 0.750rem !important;
+    font-size: 0.825rem !important;
 }
 .info i{
     display: flex;
@@ -136,151 +154,265 @@ nav li a:hover{
 }
 .fa-info{
     color: #0065FC;
-    border: solid 1px #D9D9D9;
-    width: 1.375rem;
-    height: 1.375rem;
+    border: solid 0.0625rem #D9D9D9;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
 }
 
 /* Hosting section */
-.hosting, .mostPopular{
+.hosting, .most-popular{
     background-color: #F2F2F2;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
 }
 #hosting{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    margin-top: 1.5rem;
+    margin-bottom: 4.0625rem;
+    margin-top: 1.5625rem;
 }
 
 /* Hosting list */
 .hosting{
     width: 67%;
 }
-.hosting h4, .displayMore{
-    padding-left: 2rem;
+.hosting, .most-popular{
+    padding-top: 1.125rem;
+}
+.hosting h4, .title-popular h4{
+    font-size: 1.3125rem;
+}
+.hosting h4, .show-more{
+    padding-left: 2.5rem;
+}
+.show-more{
+    font-size: 1.0625rem;
 }
 .cards{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 0 1rem;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+
 }
 .card{
+    display: block;
     text-decoration: none;
-    color: black;
+    color: #000;
+    width: 30%;
+    height: 11.8125rem;
+    background-color: #FFF;
+    border: solid 0.3125rem #FFF;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.3125rem 0.9375rem #D9D9D9;
+    margin-bottom: 1.875rem;
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-thumb1{
+    background-image: url("../images/auberge_la_cannebiere.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 7.125rem;
     width: auto;
-    background-color: white;
-    margin-bottom: 1.5rem;
-    border-radius: 15px;
-    padding: 5px;
-    box-shadow: 0px 4px 5px #bebebe45;
+    border-radius: 0.9375rem 0.9375rem 0 0;
 }
-.cardImage img{
-    width: 208px;
-    height: 100px;
-    border-radius: 15px 15px 0 0;
+.card-thumb2{
+    background-image: url("../images/hotel_du_port.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 7.125rem;
+    width: auto;
+    border-radius: 0.9375rem 0.9375rem 0 0;
 }
-.cardText{
+.card-thumb3{
+    background-image: url("../images/hotel_les_mouettes.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 7.125rem;
+    width: auto;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+}
+.card-thumb4{
+    background-image: url("../images/hotel_de_la_mer.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 7.125rem;
+    width: auto;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+}
+.card-thumb5{
+    background-image: url("../images/auberge_le_panier.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 7.125rem;
+    width: auto;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+}
+.card-thumb6{
+    background-image: url("../images/hotel_chez_amina.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 7.125rem;
+    width: auto;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+}
+
+.card-body{
     display: flex;
-    height: 65px;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 5px;
+    margin: 0.7rem 0 0 0.6875rem;
 }
-.cardTitle{
+.card-title{
     font-weight: bold;
-    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
 }
-.cardContent{
-    font-size: 0.9rem;
-    margin: 0;
+
+.card-price{
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
 }
-.note{
-    font-size: 0.7rem;
+.card-note{
+    display: flex;
+    font-size: 0.75rem;
 }
-.blueStars{
+.blue-star{
     color: #0065FC;
 }
-.greyStars{
-    color: #F2F2F2;
+.grey-star{
+    color: #D9D9D9;
 }
-.displayMore{
+.show-more{
     display: block;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    margin: 1.5rem 0 2.3rem 0;
+    margin: 0.875rem 0 2.875rem 0;
 }
-.displayMore:hover{
+.show-more:hover{
     color: #0065FC;
     font-weight: bold;
 }
 
-
 /* Popular hosting */
-.mostPopular{
+.most-popular{
     width: 30%;
+}
+.title-popular{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2.3125rem;
+}
+.cards-popular{
+    margin: 0 2.3125rem;
+}
+.card-popular{
+    height: 8.375rem;
+    text-decoration: none;
+    color: #000;
+    background-color: #FFF;
+    border-radius: 0.9375rem;
+    border: solid 0.3125rem #FFF;
+    display: flex;
+    margin-bottom: 2.0625rem;
+    box-shadow: 0 0.3125rem 0.9375rem #D9D9D9;
+    transition: transform 0.3s;
+}
+.card-popular:hover{
+    transform: scale(1.05);
+}
+.card-thumb-pop-1{
+    background-image: url("../images/hotel_le_soleil_du_matin.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 33%;
+    height: 8.375rem;
+    border-radius: 0.9375rem 0 0 0.9375rem;
+}
+.card-thumb-pop-2{
+    background-image: url("../images/au_coeur_de_l_eau_chambres_d_hotes.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 33%;
+    height: 8.375rem;
+    border-radius: 0.9375rem 0 0 0.9375rem;
+}
+.card-thumb-pop-3{
+    background-image: url("../images/hotel_tout_bleu_et_blanc.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 33%;
+    height: 8.375rem;
+    border-radius: 0.9375rem 0 0 0.9375rem;
+}
+.card-body-pop{
+    width: 50%;
+    margin: 0.9375rem 0 0 1.3125rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.titlePopular{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 1.8rem;
-}
-.popularCards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.popularCard{
-    display: flex;
-    width: 85%;
-    height: 8rem;
-    background-color: white;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    box-shadow: 0px 4px 5px #bebebe45;
-}
-.cardImagePop{
-    width: 7rem;
-    height: 7.4rem;
-    overflow: hidden;
-    border-radius: 15px 0 0 15px;    
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    margin-left: 5px;
-    object-fit: cover;
-}
-.cardImagePop img{
-    border-radius: 15px 0 0 15px; 
-    object-fit: cover;   
-    /* padding: 5px; */
-}
-.cardTextPop{
-    margin: 10px;
-    width: 40%;
-}
-.cardTitlePop{
+.card-title-pop{
     font-weight: bold;
-    font-size: 0.8rem;
 }
-.cardContentPop{
+.card-price-pop{
+    font-size: 0.875rem;
+}
+.card-note-pop{
+    display: flex;
     font-size: 0.75rem;
-    height: 75px;
+    margin-bottom: 0.625rem;
+}
+
+/* Activities section */
+#activities{
+    margin-bottom: 3.75rem;
+}
+.cards-activities{
+    display: flex;
+}
+.title-activities{
+    font-size: 1.3125rem;
+    font-weight: bold;
+    margin-bottom: 1.625rem;
+}
+.card-l{
+    background-color: black;
+    border-radius: 0.9375rem;
+    width: 25%;
+    height: 27.875rem;
+    box-shadow: 0 0.3125rem 0.9375rem #D9D9D9;
+    margin-right: 2.6875rem;
+}
+.cards-activities-2{
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.cardContentPop p{
-    margin-top: 0.4rem;
+.margin-right{
+    margin-right: 2.6875rem;
 }
-.price{
-    font-weight: bold;
+.card-m{
+    background-color: blue;
+    border-radius: 0.9375rem;
+    width: 100%;
+    height: 14.8125rem;
+    box-shadow: 0 0.3125rem 0.9375rem #D9D9D9;
+}
+.card-s{
+    background-color: red;
+    border-radius: 0.9375rem;
+    width: 100%;
+    height: 10.25rem;
+    box-shadow: 0 0.3125rem 0.9375rem #a3a3a3;
+}
+
+/* Footer */
+
+footer{
+    background-color: #f2f2f2;
 }
