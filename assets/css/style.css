@@ -11,7 +11,7 @@ body {
 
 /* NAV BAR  */
 header, main, .footer-container{
-    max-width: 93%;
+    width: 93%;
     margin: auto;
 
 }
@@ -21,7 +21,7 @@ nav{
     align-items: flex-end;
 }
 .navbarBrand{
-    max-width:25%;
+    width:5.875rem;
 }
 nav ul{
     display: flex;
@@ -43,7 +43,9 @@ nav li a:hover{
     color: #0065FC;
     font-weight: bold;
 }
-
+.sign-up-mobile{
+    display: none;
+}
 /* Search section */
 #search{
     margin-top: 3%;
@@ -104,6 +106,7 @@ nav li a:hover{
 /* filter bar */
 .filters{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding-left: 0.3125rem;
     margin-top: 1.9375rem;
@@ -166,6 +169,7 @@ nav li a:hover{
 .hosting, .most-popular{
     background-color: #F2F2F2;
     border-radius: 0.9375rem;
+    padding-top: 1.125rem;
 }
 #hosting{
     display: flex;
@@ -178,9 +182,6 @@ nav li a:hover{
 .hosting{
     width: 67%;
 }
-.hosting, .most-popular{
-    padding-top: 1.125rem;
-}
 .hosting h4, .title-popular h4{
     font-size: 1.3125rem;
 }
@@ -189,13 +190,6 @@ nav li a:hover{
 }
 .show-more{
     font-size: 1.0625rem;
-}
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 2.5rem;
-
 }
 .card{
     text-decoration: none;
@@ -206,6 +200,13 @@ nav li a:hover{
 }
 .card:hover{
     transform: scale(1.05);
+}
+.cards-hosting{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+
 }
 .card-hosting{
     width: 30%;
@@ -336,15 +337,16 @@ nav li a:hover{
 }
 .cards-activities{
     display: flex;
+    justify-content: space-between;
 }
 .title-activities h3{
     font-size: 1.3125rem;
     margin-bottom: 1.625rem;
 }
 .card-l{
-    width: 25%;
+    width: 23%;
     height: 27.875rem;
-    margin-right: 2.6875rem;
+    /* margin-right: 2.6875rem; */
 }
 .card-l-thumb{
     height: 24.375rem;
@@ -361,13 +363,10 @@ nav li a:hover{
     background-image: url('../images/activities/parc_national_des_calanques.jpg');
 }
 .cards-activities-2{
-    width: 25%;
+    width: 23%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.margin-right{
-    margin-right: 2.6875rem;
 }
 .card-m{
     width: 100%;
@@ -410,8 +409,6 @@ footer{
 .footer-container{
     height: 13.625rem;
     display: flex;
-    /* align-items: center; */
-
 }
 .footer-container ul{
     list-style: none;
