@@ -10,7 +10,7 @@ body {
 }
 
 /* NAV BAR  */
-header, section{
+header, main, .footer-container{
     max-width: 93%;
     margin: auto;
 
@@ -98,6 +98,7 @@ nav li a:hover{
     background-color: white;
     color: #0065FC;
     border: #0065FC solid 0.0625rem;
+    cursor: pointer;
 }
 
 /* filter bar */
@@ -138,6 +139,7 @@ nav li a:hover{
 }
 .filters input:hover{
     background-color: #F2F2F2;
+    cursor: pointer;
 }
 
 /* infos */
@@ -196,68 +198,46 @@ nav li a:hover{
 
 }
 .card{
-    display: block;
     text-decoration: none;
     color: #000;
-    width: 30%;
-    height: 11.8125rem;
-    background-color: #FFF;
-    border: solid 0.3125rem #FFF;
-    border-radius: 1.25rem;
     box-shadow: 0 0.3125rem 0.9375rem #D9D9D9;
-    margin-bottom: 1.875rem;
     transition: transform 0.3s;
+    border-radius: 1.25rem;
 }
 .card:hover{
     transform: scale(1.05);
 }
-.card-thumb1{
-    background-image: url("../images/auberge_la_cannebiere.jpg");
+.card-hosting{
+    width: 30%;
+    height: 11.8125rem;
+    background-color: #FFF;
+    border: solid 0.3125rem #FFF;
+    margin-bottom: 1.875rem;
+}
+.card-thumb-hosting {
     background-size: cover;
     background-position: center;
     height: 7.125rem;
     width: auto;
     border-radius: 0.9375rem 0.9375rem 0 0;
+}
+.card-thumb1{
+    background-image: url("../images/hosting/auberge_la_cannebiere.jpg");
 }
 .card-thumb2{
-    background-image: url("../images/hotel_du_port.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 7.125rem;
-    width: auto;
-    border-radius: 0.9375rem 0.9375rem 0 0;
+    background-image: url("../images/hosting/hotel_du_port.jpg");
 }
 .card-thumb3{
-    background-image: url("../images/hotel_les_mouettes.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 7.125rem;
-    width: auto;
-    border-radius: 0.9375rem 0.9375rem 0 0;
+    background-image: url("../images/hosting/hotel_les_mouettes.jpg");
 }
 .card-thumb4{
-    background-image: url("../images/hotel_de_la_mer.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 7.125rem;
-    width: auto;
-    border-radius: 0.9375rem 0.9375rem 0 0;
+    background-image: url("../images/hosting/hotel_de_la_mer.jpg");
 }
 .card-thumb5{
-    background-image: url("../images/auberge_le_panier.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 7.125rem;
-    width: auto;
-    border-radius: 0.9375rem 0.9375rem 0 0;
+    background-image: url("../images/hosting/auberge_le_panier.jpg");
 }
 .card-thumb6{
-    background-image: url("../images/hotel_chez_amina.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 7.125rem;
-    width: auto;
-    border-radius: 0.9375rem 0.9375rem 0 0;
+    background-image: url("../images/hosting/hotel_chez_amina.jpg");
 }
 
 .card-body{
@@ -269,7 +249,6 @@ nav li a:hover{
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
-
 .card-price{
     font-size: 0.875rem;
     margin-bottom: 0.5rem;
@@ -311,42 +290,26 @@ nav li a:hover{
 }
 .card-popular{
     height: 8.375rem;
-    text-decoration: none;
-    color: #000;
     background-color: #FFF;
-    border-radius: 0.9375rem;
     border: solid 0.3125rem #FFF;
     display: flex;
     margin-bottom: 2.0625rem;
-    box-shadow: 0 0.3125rem 0.9375rem #D9D9D9;
-    transition: transform 0.3s;
 }
-.card-popular:hover{
-    transform: scale(1.05);
+.card-thumb-pop{
+    background-size: cover;
+    background-position: center;
+    width: 33%;
+    height: 8.375rem;
+    border-radius: 1.25rem 0 0 1.25rem;
 }
 .card-thumb-pop-1{
-    background-image: url("../images/hotel_le_soleil_du_matin.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 33%;
-    height: 8.375rem;
-    border-radius: 0.9375rem 0 0 0.9375rem;
+    background-image: url("../images/hosting/hotel_le_soleil_du_matin.jpg");
 }
 .card-thumb-pop-2{
-    background-image: url("../images/au_coeur_de_l_eau_chambres_d_hotes.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 33%;
-    height: 8.375rem;
-    border-radius: 0.9375rem 0 0 0.9375rem;
+    background-image: url("../images/hosting/au_coeur_de_l_eau_chambres_d_hotes.jpg");
 }
 .card-thumb-pop-3{
-    background-image: url("../images/hotel_tout_bleu_et_blanc.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 33%;
-    height: 8.375rem;
-    border-radius: 0.9375rem 0 0 0.9375rem;
+    background-image: url("../images/hosting/hotel_tout_bleu_et_blanc.jpg");
 }
 .card-body-pop{
     width: 50%;
@@ -374,18 +337,28 @@ nav li a:hover{
 .cards-activities{
     display: flex;
 }
-.title-activities{
+.title-activities h3{
     font-size: 1.3125rem;
-    font-weight: bold;
     margin-bottom: 1.625rem;
 }
 .card-l{
-    background-color: black;
-    border-radius: 0.9375rem;
     width: 25%;
     height: 27.875rem;
-    box-shadow: 0 0.3125rem 0.9375rem #D9D9D9;
     margin-right: 2.6875rem;
+}
+.card-l-thumb{
+    height: 24.375rem;
+}
+.card-thumb-activities{
+    border-radius: 1.25rem 1.25rem 0 0;
+    background-size: cover;
+    background-position: center;
+}
+.card-l-thumb-1{
+    background-image: url('../images/activities/vieux_port.jpg');
+}
+.card-l-thumb-2{
+    background-image: url('../images/activities/parc_national_des_calanques.jpg');
 }
 .cards-activities-2{
     width: 25%;
@@ -397,22 +370,65 @@ nav li a:hover{
     margin-right: 2.6875rem;
 }
 .card-m{
-    background-color: blue;
-    border-radius: 0.9375rem;
     width: 100%;
     height: 14.8125rem;
-    box-shadow: 0 0.3125rem 0.9375rem #D9D9D9;
+}
+.card-m-thumb{
+    height: 11.25rem;
+}
+.card-m-thumb-1{
+    background-image: url("../images/activities/fort_de_pomegues.jpg");
+}
+.card-m-thumb-2{
+    background-image: url("../images/activities/parc_longchamp.jpg");
 }
 .card-s{
-    background-color: red;
-    border-radius: 0.9375rem;
     width: 100%;
     height: 10.25rem;
-    box-shadow: 0 0.3125rem 0.9375rem #a3a3a3;
 }
+.card-s-thumb{
+    height: 6.875rem;
+}
+.card-s-thumb-1{
+    background-image: url("../images/activities/iles_du_frioul.jpg");
+}
+.card-s-thumb-2{
+    background-image: url("../images/activities/notre_dame_de_la_garde.jpg");
+}
+.card-title-activities{
+    font-size: 0.9375rem;
+    font-weight: bold;
+    margin: 1.25rem 1.25rem 0 1.25rem;
+}
+
 
 /* Footer */
 
 footer{
     background-color: #f2f2f2;
+}
+.footer-container{
+    height: 13.625rem;
+    display: flex;
+    /* align-items: center; */
+
+}
+.footer-container ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 3.0625rem;
+    width: 33%;
+}
+.footer-container .title{
+    font-size: 1.0625rem;
+    font-weight: bold;
+}
+.footer-container a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-top: 0.9375rem;
+}
+.footer-container a:hover{
+    color: #0065FC;
 }
