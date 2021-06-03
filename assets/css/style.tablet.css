@@ -12,10 +12,10 @@
     .filters-title{
         margin-right: 1rem;
     }
-    .filters-section li{
+    .filters-title, .filters div{
         margin-bottom: 0.8125rem;
     }
-    .filters li{
+    .filters div{
         position: relative;
         left: -1.3rem;
     }
@@ -29,6 +29,7 @@
     .most-popular{
         width: 100%;
         padding-bottom: 0.975rem;
+        border-radius: 0;
     }
     .card-popular{
         margin-bottom: 1rem;

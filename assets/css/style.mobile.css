@@ -77,13 +77,13 @@
     }
 
     /* filters */
-    .filters-section li{
+    .filters-title, .filters div{
         margin-bottom: 0.8125rem;
     }
     .filters .fas{
         height: 2.875rem;
     }
-    .filters li{
+    .filters div{
         position: relative;
         left: -1.3rem;
     }

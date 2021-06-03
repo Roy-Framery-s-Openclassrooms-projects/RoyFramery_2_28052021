@@ -78,7 +78,7 @@ nav li a:hover{
     width: 14.625rem;
     padding-left: 1.0625rem;
 }
-.search-input::placeholder{
+.search-input::placeholder, .search-input:focus{
     color: black;
     font-weight: bold;
     font-size: 1.125rem;
@@ -109,12 +109,12 @@ nav li a:hover{
 /* filter bar */
 .filters-section{
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    list-style: none;
     padding-left: 0.3125rem;
     margin-top: 1.9375rem;
 }
-.filters-section li{
+.filters div{
     display: flex;
     align-items: center;
 }
