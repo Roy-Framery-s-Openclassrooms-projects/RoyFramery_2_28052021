@@ -1,0 +1,72 @@
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    main{
+        width: 100%;
+        margin: 0;
+    }
+    #search, .hosting, #activities{
+        width: 90%;
+        margin: auto;
+    }
+
+    /* search section */
+    .filters-title{
+        margin-right: 1rem;
+    }
+    .filters-section li{
+        margin-bottom: 0.8125rem;
+    }
+    .filters li{
+        position: relative;
+        left: -1.3rem;
+    }
+
+    /* hosting */
+    #hosting{
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+    /* popular section */
+    .most-popular{
+        width: 100%;
+        padding-bottom: 0.975rem;
+    }
+    .card-popular{
+        margin-bottom: 1rem;
+    }
+    /* hosting section */
+    .hosting{
+        background-color: #FFF;
+        padding-top: 0;
+    }
+    .cards-hosting{
+        padding: 0;
+    }
+    .card-hosting{
+        width: 47%;
+        margin-bottom: 1rem;
+    }
+
+    /* Activities section */
+    .cards-activities{
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+    .cards-activities-column-left, .cards-activities-column-right{
+        flex-wrap: wrap;
+    }
+    .card-l, .card-m, .card-s{
+        height: 11.8125rem;
+        margin-bottom: 5%;
+    }
+    .card-l, .cards-activities-2{
+        width: 95%;
+    }
+    .card-thumb-activities{
+        height: 8.125rem;
+    }
+
+    /* footer section */
+    .footer-container ul{
+        padding-left: 1rem;
+    }
+}

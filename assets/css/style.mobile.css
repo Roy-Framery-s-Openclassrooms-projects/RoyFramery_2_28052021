@@ -1,13 +1,11 @@
-/* tablet's media queries */
-@media screen and (max-width : 1023px){
-
-}
 /* smartphone's media queries */
 @media screen and (max-width : 767px){
     main, header{
         width: 100%;
         margin: 0;
     }
+    
+    /* header */
     nav div, #search{
         width: 90%;
         margin: 0 1.3125rem;
@@ -48,23 +46,61 @@
         padding-top: 2.125rem;
     }
 
-#search h3{
-    font-size: 1.375rem;
-}
-#search p{
-    font-size: 1rem;
-}
+    /* search section */
+    #search h3{
+        font-size: 1.375rem;
+    }
+    #search p{
+        font-size: 1rem;
+    }
+    .search-input{
+        width: 63%;
+    }
+    .search .search-button{
+        display: none;
+    }
+    .search .fa-search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        background-color: #0065FC;
+        height: 3.1875rem;
+        width: 3.1875rem;
+        border-radius: 0.9375rem;
+        position: relative;
+        left: -1rem;
+    }
 
+    /* filters */
+    .filters-section li{
+        margin-bottom: 0.8125rem;
+    }
+    .filters .fas{
+        height: 2.875rem;
+    }
+    .filters li{
+        position: relative;
+        left: -1.3rem;
+    }
+    .filters input{
+        height: 2.875rem;
+        padding-left: 1.3rem;
+    }
+    .search-info{
+        font-size: 1rem !important;
+        align-items: baseline;
+    }
+    .fa-info{
+        font-size: 0.75rem;
+    }
 
-
-
-
-    
+    /* hosting */
     #hosting{
         flex-direction: column-reverse;
         margin-bottom: 0;
     }
-    /* Popular hosting section */
+    /* Popular section */
     .most-popular{
         border-radius: 0;
         width: 100%;
@@ -111,6 +147,9 @@
     .cards-activities{
         flex-direction: column;
     }
+    .cards-activities-column-right, .cards-activities-column-left{
+        flex-direction: column;
+    }
     .cards-activities-2{
         width: 100%;
     }
@@ -123,7 +162,7 @@
         height: 8.375rem;
     }
 
-    /* footer */
+    /* footer section */
     footer{
         padding: 0 1.8125rem;
     }

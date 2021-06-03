@@ -10,41 +10,44 @@
     <link rel="icon" type="image/png" href="assets/images/logo/favicon.png" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="assets/css/style.mobile.css">
-    <!-- <link rel="stylesheet" href="assets/css/mediaQueries.css"> -->
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="assets/css/style.tablet.css">
     <title>Reservia</title>
 </head>
 <body>
     <header>
         <nav>
             <div>
-                <a href="#"><img class="navbarBrand" src="assets/images/logo/logo.png" alt="logo de l'entreprise Reservia"></a>
+                <a href="#"><img class="navbar-brand" src="assets/images/logo/logo.png" alt="logo de l'entreprise Reservia"></a>
                 <a class="sign-up-mobile" href="#">S'inscrire</a>
             </div>
             <ul>
                 <li><a href="#hosting">Hébergements</a></li>
                 <li><a href="#activities">Activités</a></li>
-                <li class="hide-element"><a class="signUp" href="#">S'inscrire</a></li>
+                <li class="hide-element"><a class="sign-up" href="#">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
 
     <main>    
         <section id="search">
-                <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
-                <p>En plein centre ville ou en pleine nature</p>
-                <form class="research" action="POST">
-                    <i class="fas fa-map-marker-alt fa-lg"></i>
-                    <input class="searchInput" type="text" placeholder="Marseille, France">
-                    <input class="searchButton" type="submit" value="Rechercher">
+            <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form class="search" action="POST">
+                <i class="fas fa-map-marker-alt fa-lg"></i>
+                <input class="search-input" type="text" placeholder="Marseille, France">
+                <input class="search-button" type="submit" value="Rechercher">
+                <i class="fas fa-search"></i>
             </form>
-            <ul class="filters">
-                <li class="filtersTitle">Filtres</li>
-                <li><i class="fas fa-money-bill-wave"></i><input type="button" value="Économique"></li>
-                <li><i class="fas fa-child"></i><input type="button" value="Familial"></li>
-                <li><i class="fas fa-heart"></i><input type="button" value="Romantique"></li>
-                <li><i class="fas fa-dog"></i><input type="button" value="Animaux autorisés"></li>
+            <ul class="filters-section">
+                <li class="filters-title">Filtres</li>
+                <div class="filters">
+                    <li><i class="fas fa-money-bill-wave"></i><input type="button" value="Économique"></li>
+                    <li><i class="fas fa-child"></i><input type="button" value="Familial"></li>
+                    <li><i class="fas fa-heart"></i><input type="button" value="Romantique"></li>
+                    <li><i class="fas fa-dog"></i><input type="button" value="Animaux autorisés"></li>
+                </div>
             </ul>
-            <p class="info"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+            <p class="search-info"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
         <section id="hosting">
@@ -227,45 +230,49 @@
                 <h3>Activités à Marseille</h3>
             </div>
             <div class="cards-activities">
-                <a href="#" class="card card-l">
-                    <div class="card-thumb-activities card-l-thumb card-l-thumb-1"></div>
-                    <div class="card-title-activities">
-                        Vieux Port
+                <div class="cards-activities-column-left">
+                    <a href="#" class="card card-l">
+                        <div class="card-thumb-activities card-l-thumb card-l-thumb-1"></div>
+                        <div class="card-title-activities">
+                            Vieux Port
+                        </div>
+                    </a>
+                    <div class="cards-activities-2">
+                        <a href="#" class="card card-m">
+                            <div class="card-thumb-activities card-m-thumb card-m-thumb-1"></div>
+                            <div class="card-title-activities">
+                                Fort de Pomègues
+                            </div>
+                        </a>
+                        <a href="#" class="card card-s">
+                            <div class="card-thumb-activities card-s-thumb card-s-thumb-1"></div>
+                            <div class="card-title-activities">
+                                Îles de Frioul
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <div class="cards-activities-2 margin-right">
-                    <a href="#" class="card card-m">
-                        <div class="card-thumb-activities card-m-thumb card-m-thumb-1"></div>
-                        <div class="card-title-activities">
-                            Fort de Pomègues
-                        </div>
-                    </a>
-                    <a href="#" class="card card-s">
-                        <div class="card-thumb-activities card-s-thumb card-s-thumb-1"></div>
-                        <div class="card-title-activities">
-                            Îles de Frioul
-                        </div>
-                    </a>
                 </div>
-                <a href="#" class="card card-l">
-                    <div class="card-thumb-activities card-l-thumb card-l-thumb-2"></div>
-                    <div class="card-title-activities">
-                        Port National des Calanques
+                <div class="cards-activities-column-right">
+                    <a href="#" class="card card-l">
+                        <div class="card-thumb-activities card-l-thumb card-l-thumb-2"></div>
+                        <div class="card-title-activities">
+                            Port National des Calanques
+                        </div>
+                    </a>
+                    <div class="cards-activities-2">
+                        <a href="#" class="card card-s">
+                            <div class="card-thumb-activities card-s-thumb card-s-thumb-2"></div>
+                            <div class="card-title-activities">
+                                Notre-Dame-de-la-Garde
+                            </div>
+                        </a>
+                        <a href="#" class="card card-m">
+                            <div class="card-thumb-activities card-m-thumb card-m-thumb-2"></div>
+                            <div class="card-title-activities">
+                                Parc Longchamp
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <div class="cards-activities-2">
-                    <a href="#" class="card card-s">
-                        <div class="card-thumb-activities card-s-thumb card-s-thumb-2"></div>
-                        <div class="card-title-activities">
-                            Notre-Dame-de-la-Garde
-                        </div>
-                    </a>
-                    <a href="#" class="card card-m">
-                        <div class="card-thumb-activities card-m-thumb card-m-thumb-2"></div>
-                        <div class="card-title-activities">
-                            Parc Longchamp
-                        </div>
-                    </a>
                 </div>
             </div>
         </section>

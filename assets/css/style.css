@@ -20,7 +20,7 @@ nav{
     justify-content: space-between;
     align-items: flex-end;
 }
-.navbarBrand{
+.navbar-brand{
     width:5.875rem;
 }
 nav ul{
@@ -39,7 +39,7 @@ nav li a:hover{
     color: #0065FC;
     padding-top: 2.9375rem;
 }
-.signUp{
+.sign-up{
     color: #0065FC;
     font-weight: bold;
 }
@@ -60,11 +60,11 @@ nav li a:hover{
 }
 
 /* search bar */
-.research{
+.search{
     display: flex;
     margin-top: 0.5rem;
 }
-.research .fas{
+.search .fa-map-marker-alt{
     background-color: #F2F2F2;
     width: 3.1875rem;
     height: 3.1875rem;
@@ -73,21 +73,24 @@ nav li a:hover{
     justify-content: center;
     align-items: center;
 }
-.searchInput::placeholder{
-    color: black;
-    font-weight: bold;
-    font-size: 1.125rem;
-}
-.searchInput{
+.search-input{
     border: solid 0.0625rem #F2F2F2;
     width: 14.625rem;
     padding-left: 1.0625rem;
 }
-.searchInput:focus{
+.search-input::placeholder{
+    color: black;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+.search-input:focus{
     outline-style: none;
     border-color: #0065FC;
 }
-.searchButton{
+.search .fa-search{
+    display: none;
+}
+.search-button{
     background-color: #0065FC;
     color: white;
     border-style: none;
@@ -96,7 +99,7 @@ nav li a:hover{
     font-size: 1.125rem;
     transition: background-color 0.3s;
 }
-.searchButton:hover{
+.search-button:hover{
     background-color: white;
     color: #0065FC;
     border: #0065FC solid 0.0625rem;
@@ -104,19 +107,23 @@ nav li a:hover{
 }
 
 /* filter bar */
-.filters{
+.filters-section{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     padding-left: 0.3125rem;
     margin-top: 1.9375rem;
 }
-.filters li{
+.filters-section li{
     display: flex;
     align-items: center;
 }
-.filtersTitle{
+.filters-title{
     font-weight: bold;
+}
+.filters{
+    display: flex;
+    flex-wrap: wrap;
 }
 .filters .fas{
     color: #0065FC;
@@ -146,12 +153,12 @@ nav li a:hover{
 }
 
 /* infos */
-.info{
+.search-info{
     display: flex;
     align-items: center;
     font-size: 0.825rem !important;
 }
-.info i{
+.search-info i{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,16 +344,19 @@ nav li a:hover{
 }
 .cards-activities{
     display: flex;
-    justify-content: space-between;
+}
+.cards-activities-column-left, .cards-activities-column-right{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 .title-activities h3{
     font-size: 1.3125rem;
     margin-bottom: 1.625rem;
 }
 .card-l{
-    width: 23%;
+    width: 45%;
     height: 27.875rem;
-    /* margin-right: 2.6875rem; */
 }
 .card-l-thumb{
     height: 24.375rem;
@@ -363,7 +373,7 @@ nav li a:hover{
     background-image: url('../images/activities/parc_national_des_calanques.jpg');
 }
 .cards-activities-2{
-    width: 23%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
