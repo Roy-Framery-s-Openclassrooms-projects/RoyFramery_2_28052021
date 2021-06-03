@@ -4,7 +4,7 @@
         width: 100%;
         margin: 0;
     }
-    
+
     /* header */
     nav div, #search{
         width: 90%;
@@ -59,6 +59,9 @@
     .search .search-button{
         display: none;
     }
+    .search a{
+        text-decoration: none !important;
+    }
     .search .fa-search{
         display: flex;
         justify-content: center;
@@ -70,6 +73,7 @@
         border-radius: 0.9375rem;
         position: relative;
         left: -1rem;
+        cursor: pointer;
     }
 
     /* filters */
@@ -85,7 +89,8 @@
     }
     .filters input{
         height: 2.875rem;
-        padding-left: 1.3rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
     }
     .search-info{
         font-size: 1rem !important;
