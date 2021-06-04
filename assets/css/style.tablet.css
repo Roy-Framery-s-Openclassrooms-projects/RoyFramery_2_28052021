@@ -2,6 +2,9 @@
     html{
         font-size: 13px;
     }
+    header{
+        width: 100%;
+    }
     main{
         width: 100%;
         margin: 0;
@@ -16,8 +19,8 @@
 
     /* header */
     nav div{
-        width: 90%;
-        margin: 0 1.25rem;
+        width: 95%;
+        margin: auto;
     }
     nav{
         flex-direction: column;
@@ -114,6 +117,9 @@
     }
 
     /* Activities section */
+    .title-activities h3{
+        margin-top: 0;
+    }
     .cards-activities{
         justify-content: space-between;
         margin-bottom: 1.5rem;

@@ -120,6 +120,7 @@ body
     #hosting{
         flex-direction: column-reverse;
         width: 100%;
+        margin-bottom: 0;
     }
     /* Popular section */
     .most-popular{
