@@ -1,14 +1,18 @@
 /* smartphone's media queries */
-@media screen and (max-width : 767px){
+@media screen and (max-width : 480px){
+html{
+    font-size: 16px;
+}
+body
     main, header{
         width: 100%;
         margin: 0;
     }
 
     /* header */
-    nav div, #search{
+    nav div{
         width: 90%;
-        margin: 0 1.3125rem;
+        margin: 0 1.25rem;
     }
     nav{
         flex-direction: column;
@@ -40,6 +44,11 @@
         border-bottom: solid #F2F2F2;
         padding: 2.125rem 0 0.8125rem 0;
     }
+    .active{
+        border-top: none;
+        border-bottom: solid;
+        padding-top: 2.125rem;
+    }
     nav li a:hover{
         border-top: none;
         border-bottom: solid;
@@ -47,14 +56,21 @@
     }
 
     /* search section */
+    #search{
+        width: 95%;
+        margin: auto;
+    }
     #search h3{
         font-size: 1.375rem;
     }
     #search p{
         font-size: 1rem;
     }
+    .search{
+        position: relative;
+    }
     .search-input{
-        width: 63%;
+        width:100%;
     }
     .search .search-button{
         display: none;
@@ -71,8 +87,8 @@
         height: 3.1875rem;
         width: 3.1875rem;
         border-radius: 0.9375rem;
-        position: relative;
-        left: -1rem;
+        position: absolute;
+        right: 0;
         cursor: pointer;
     }
 
@@ -103,7 +119,7 @@
     /* hosting */
     #hosting{
         flex-direction: column-reverse;
-        margin-bottom: 0;
+        width: 100%;
     }
     /* Popular section */
     .most-popular{

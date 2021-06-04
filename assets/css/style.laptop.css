@@ -1,65 +1,22 @@
-@media screen and (min-width: 481px) and (max-width: 768px){
-    html{
-        font-size: 13px;
-    }
+@media screen and (min-width: 769px) and (max-width: 1024px){
     main{
         width: 100%;
         margin: 0;
     }
+    header{
+        width: 95%;
+    }
     section{
         width: 100%;
     }
+    #hosting{
+        width: 100%;
+    }
     #search, .hosting, #activities{
-        width: 96%;
+        width: 95%;
         margin: auto;
     }
 
-    /* header */
-    nav div{
-        width: 90%;
-        margin: 0 1.25rem;
-    }
-    nav{
-        flex-direction: column;
-    }
-    nav div{
-        margin: 2rem auto 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .hide-element{
-        display: none;
-    }
-    .sign-up-mobile{
-        display: block;
-        color: #0065FC;
-        font-weight: bold;
-        text-decoration: none;    
-    }
-    nav ul{
-        width: 100%;
-        padding: 0;
-    }
-    nav li{
-        width: 100%;
-        text-align: center;
-    }
-    nav li a{
-        border-bottom: solid #F2F2F2;
-        padding: 2.125rem 0 0.8125rem 0;
-    }
-    .active{
-        border-top: none;
-        border-bottom: solid;
-        padding-top: 2.125rem;
-    }
-    nav li a:hover{
-        border-top: none;
-        border-bottom: solid;
-        padding-top: 2.125rem;
-    }
-    
     /* search section */
     .filters-title{
         margin-right: 1rem;
@@ -75,7 +32,6 @@
     /* hosting */
     #hosting{
         flex-direction: column-reverse;
-        width: 100%;
         margin-bottom: 0;
     }
     /* popular section */
@@ -84,11 +40,9 @@
         padding-bottom: 0.975rem;
         border-radius: 0;
     }
-    .title-popular, .cards-popular{
+    .cards-popular{
         width: 95%;
         margin: auto;
-    }
-    .cards-popular{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -96,9 +50,6 @@
     .card-popular{
         margin-bottom: 1rem;
         width: 47%;
-    }
-    .card-thumb-pop{
-        width: 45%;
     }
     /* hosting section */
     .hosting{
@@ -114,19 +65,23 @@
     }
 
     /* Activities section */
+    .title-activities{
+        width: 100%;
+    }
     .cards-activities{
         justify-content: space-between;
         margin-bottom: 1.5rem;
     }
     .cards-activities-column-left, .cards-activities-column-right{
         flex-wrap: wrap;
+        width: 47%;
     }
     .card-l, .card-m, .card-s{
         height: 11.8125rem;
         margin-bottom: 5%;
     }
     .card-l, .cards-activities-2{
-        width: 95%;
+        width: 100%;
     }
     .card-thumb-activities{
         height: 8.125rem;
