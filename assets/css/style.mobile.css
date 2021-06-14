@@ -23,15 +23,6 @@ body
         justify-content: space-between;
         align-items: center;
     }
-    .hide-element{
-        display: none;
-    }
-    .sign-up-mobile{
-        display: block;
-        color: #0065FC;
-        font-weight: bold;
-        text-decoration: none;    
-    }
     nav ul{
         width: 100%;
         padding: 0;
@@ -53,6 +44,20 @@ body
         border-top: none;
         border-bottom: solid;
         padding-top: 2.125rem;
+    }
+    .sign-up{
+        width: 25%;
+        position: absolute;
+        right: 0;
+        border-bottom: none;
+    }
+    .sign-up:hover{
+        border: none;
+    }
+    #sign-up{
+        position: absolute;
+        right: 0;
+        top: 13px;
     }
 
     /* search section */

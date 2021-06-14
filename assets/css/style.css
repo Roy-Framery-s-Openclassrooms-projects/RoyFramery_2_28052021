@@ -9,7 +9,7 @@ html{
 }
 body {
     font-family: 'raleway', Arial, Helvetica, sans-serif;
-    max-width: 1024px;
+    max-width: 1440px;
     margin: auto;
 }
 #search, #hosting{
@@ -54,9 +54,7 @@ nav li a:hover{
     color: #0065FC;
     font-weight: bold;
 }
-.sign-up-mobile{
-    display: none;
-}
+
 /* Search section */
 #search{
     margin-top: 3%;
